@@ -21,10 +21,9 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-
 #
 # copied from : https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/automate_nginx.sh
-#
+
 apt-get update -y && apt-get upgrade -y
 apt-get install -y nginx
 echo "Hello World from host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
